@@ -10,10 +10,27 @@
             flex-direction: column;
             align-items: center;
         }
+        section h1{
+            font-size: 50px;
+        }
         .recipes {
             display: flex;
             justify-content: center;
             gap: 20px;
+        }
+        .recipe-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        .recipe-link img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -22,9 +39,18 @@
         <h1>Odin Recipes</h1>
     </section>
     <section class="recipes">
-        <a href="recipes/orange-chicken.html">Orange Chicken</a>
-        <a href="recipes/oyster-mushroom-pasta.html">Oyster Mushroom Pasta</a>
-        <a href="recipes/sprite-pork-adobo.html">Sprite Pork Adobo</a>
+        <a href="recipes/orange-chicken.html" class="recipe-link">
+            <img src="images/orange-chicken.jpg" alt="Orange Chicken">
+            <span>Orange Chicken</span>
+        </a>
+        <a href="recipes/oyster-mushroom-pasta.html" class="recipe-link">
+            <img src="images/Oyster-mushroom-pasta.jpg" alt="Oyster Mushroom Pasta">
+            <span>Oyster Mushroom Pasta</span>
+        </a>
+        <a href="recipes/sprite-pork-adobo.html" class="recipe-link">
+            <img src="images/Pork-Adobo-3.jpg" alt="Sprite Pork Adobo">
+            <span>Sprite Pork Adobo</span>
+        </a>
     </section>
 </body>
 </html>
